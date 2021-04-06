@@ -1,11 +1,5 @@
-// The http.createServer() method includes request
-// and response parameters which is supplied by Node.js.
-
-const http = require("http");
-
-const server = http.createServer((req, res)=>{
-  res.end("Hello from the others side");
+const http = require ("http");
+const server = http.createServer((response, request)=>{
+    response.end("<h1>Hello Bangalore Good Morning to all</h1>");
 });
-server.listen(4000,"127.0.0.1", ()=>{
-    console.log("listening to the server port dfgdf 4000");
-});
+server.listen(8000,"127.0.0.1",()=>{});
